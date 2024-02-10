@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/01-content/image/tab-icon.png">
+    <link rel="stylesheet" href="/02-content/03-style.css">
+    <title>Eco Store</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-item">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="/01-content/index.html" class="n-top">Eco <span>Store</span></a>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search..">
+                <button class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-search">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <i class='far fa-heart' id="cart-heart"></i>
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="/01-content/index.html" class="active">Home</a></li>
+                <div class="menu-down">
+                    <li><a href="/02-content/01.html" class="drop-btn">Megashop<i class="fa fa-caret-down"></i>
+                        </a></li>
+                    <div class="down-content">
+                        <div class="col-1">
+                            <div class="col-2">
+                                <h2>Computer & Tablet</h2>
+                                <div class="col-3">
+                                    <a href="/03-content/02.html">Computer & Accessories</a>
+                                    <p>Monitors</p>
+                                    <p>Webcams</p>
+                                    <p>USB Hubs</p>
+                                    <p>PC & Video Games</p>
+                                    <p>Headphones, Earphones & Accessories</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Books</h2>
+                                <div class="col-3">
+                                    <p>Books in other Languages</p>
+                                    <p>English Books</p>
+                                    <p>French Books</p>
+                                    <p>Spanish Books</p>
+                                    <p>Italy Books</p>
+                                    <p>German Books</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Home & Garden</h2>
+                                <div class="col-3">
+                                    <p>Homeware & Furniture</p>
+                                    <p>Cooking & Dining</p>
+                                    <p>Coffee</p>
+                                    <p>Deep Fryers</p>
+                                    <p>Bowl Sets</p>
+                                    <p>Butter Dishes</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Fashion Style</h2>
+                                <div class="col-3">
+                                    <p>Men</p>
+                                    <p>Women</p>
+                                    <p>Sport Specific Clothing</p>
+                                    <p>Work Wear & Uniforms</p>
+                                    <p>Novelty & Special Use Clothing</p>
+                                    <p>Shoe, Jewellery & Watch Accessories</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Grocery</h2>
+                                <div class="col-3">
+                                    <p>Baby Food</p>
+                                    <p>Bakery</p>
+                                    <p>Baking Supplies</p>
+                                    <p>Beer, Wine & Spirits</p>
+                                    <p>Coffee, Tea & Beverages</p>
+                                    <p>Dairy & Chilled Food</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Business, Industry & Science</h2>
+                                <div class="col-3">
+                                    <p>3D Printing & Scanning</p>
+                                    <p>Abrasive & Finishing Products</p>
+                                    <p>Agricultural Equipment & Supplies</p>
+                                    <p>Cutting Tools</p>
+                                    <p>Education Supplies</p>
+                                    <p>Filtration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="/02-content/02.html">Contact Us</a></li>
+            </ul>
+            <div class="drop-cont">
+                <div class="dropdown">
+                    <button class="dropbtn">USD
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">English
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <p>English</a>
+                        <p>German</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg-1">
+        <div class="bg-content">
+            <h2>Contact</h2>
+        </div>
+    </div>
+    <div class="contact-content">
+        <from action="#">
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" id="lname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="europa">Europa</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea name="subject" id="subject" placeholder="Write something.." style="height: 200px;"></textarea>
+            <input type="submit" value="Submit" class="submit">
+        </from>
+    </div>
+    <section class="footer">
+        <footer class="footer">
+            <div class="content-footer">
+                <div class="footer-box">
+                    <h2>Eco <span>Store</span></h2>
+                    <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.
+                    </p>
+                    <p>Call us: 041 096 257 14</p>
+                    <i class='fab fa-facebook-f'></i>
+                    <i class='fab fa-instagram'></i>
+                    <i class='fab fa-twitter'></i>
+                    <i class='fab fa-whatsapp'></i>
+                </div>
+                <div class="footer-box">
+                    <h3>Information</h3>
+                    <p>Delivery</p>
+                    <p>About us</p>
+                    <p>Secure payment</p>
+                    <p>Contact us</p>
+                    <p>Sitemap</p>
+                    <p>Stores</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Custom Links</h3>
+                    <p>Legal Notice</p>
+                    <p>Prices drop</p>
+                    <p>New products</p>
+                    <p>Best sales</p>
+                    <p>My account</p>
+                    <p>Terms and conditions</p>
+                </div>
+                <div class="footer-box">
+                    <h3>My Account</h3>
+                    <p>My Orders</p>
+                    <p>My Credit Slips</p>
+                    <p>My Addresses</p>
+                    <p>My Personal Info</p>
+                    <p>Return Policy</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

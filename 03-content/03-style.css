@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Here Start First Bar */
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: #1F2A37;
+    border-bottom: 0.1px solid #495057;
+    border-bottom-width: 0.1px;
+    border-bottom-style: solid;
+}
+
+.nav-item {
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+    align-items: center;
+}
+
+/* Logo on first NavBar */
+.n-top {
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+span {
+    color: #8ecae6;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.search-input {
+    font-size: inherit;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    width: 700px;
+    height: 45px;
+    transition: all ease-in-out .5s;
+    margin-right: -5.4rem;
+}
+
+.search-button {
+    border: none;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #8ecae6;
+    color: #fff;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+/* This Icon is on right navbar Heart */
+#cart-heart {
+    font-size: 28px;
+    position: relative;
+    align-items: center;
+    color: #fff;
+    right: 15px;
+}
+
+/* Cart Icon */
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Here End First Nav */
+
+
+/* Here Start Header Second Bar */
+header {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    transition: 0.6s;
+    background-color: #1F2A37;
+    z-index: 1;
+    outline: 0;
+}
+
+.nav-bar {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+    align-items: center;
+}
+
+.nav-bar a {
+    color: transparent;
+}
+
+.nav-bar a:hover {
+    color: #8ecae6;
+}
+
+.nav-bar a.active {
+    color: #8ecae6;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.nav-bar ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: transform 250ms ease-out;
+}
+
+/* Here is Dropdown */
+.drop-cont {
+    display: flex;
+}
+
+.menu-down .drop-btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-decoration: none;
+}
+
+.down-content {
+    position: absolute;
+    top: 100%;
+    z-index: 9;
+    display: none;
+    text-align: left;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.down-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.menu-down:hover .down-content {
+    display: block;
+}
+
+.fa-caret-down {
+    position: relative;
+    left: 8px;
+}
+
+.col-1 {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.col-2 {
+    width: 300px;
+}
+
+.col-2 h2 {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #253237;
+}
+
+.col-3 p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    left: 0;
+    color: #253237;
+}
+
+.col-3 a {
+    font-size: 14px;
+    line-height: 5px;
+    font-weight: 400;
+    position: relative;
+    margin-left: -15px;
+}
+
+.col-3 a:hover {
+    color: #8ecae6;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav-bar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+    color: #8ecae6;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    z-index: 9;
+    display: none;
+    text-align: left;
+    padding: 5px 5px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content p {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content p:hover {
+    background-color: #ddd;
+    color: #fff;
+}
+
+.show {
+    display: block;
+}
+
+/* Here End Header */
+
+
+.bg-content {
+    background: url(image/bg-shops.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 28vh;
+}
+
+.bg-content h2 {
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+/* Here Start BG-2 */
+.width {
+    width: 90%;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.side-bar {
+    float: inline-start;
+    position: relative;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #253237;
+}
+
+.categoris {
+    place-items: top;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#p-first {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 70px;
+    border-bottom: 1px solid #bbb;
+    text-transform: capitalize !important;
+    width: calc(280px - 10px);
+    overflow: visible;
+    outline: none;
+    position: relative;
+    color: #253237;
+}
+
+.check-box {
+    position: relative;
+    top: 12px;
+}
+
+.check-box li {
+    line-height: 35px;
+    font-size: 15px;
+    color: #253237;
+}
+
+.checkbox {
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.first-btn-grid {
+    display: flex;
+    position: relative;
+    top: 20px;
+    gap: 1rem;
+}
+
+.second-btn-grid {
+    display: flex;
+    position: relative;
+    top: 35px;
+    gap: 1rem;
+}
+
+.btn-group {
+    font-size: 14px;
+    padding: 10px 10px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.bg-2 {
+    text-align: left;
+    position: relative;
+}
+
+.bg-2-content {
+    width: 75%;
+    height: auto;
+    margin: 4.5rem 0 10rem 0;
+    position: relative;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    float: inline-end;
+    row-gap: 2rem;
+}
+
+#new-product {
+    width: 110px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+    padding: 3px 6px;
+    align-items: center;
+    background-color: #8baaad;
+    color: #fff;
+}
+
+.text-bottom {
+    line-height: 30px;
+}
+
+.img-grid {
+    height: 250px;
+    border-radius: 10px;
+    padding: 8px 0px 15px 50px;
+}
+
+.add-to-card {
+    padding: 5px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #d6ccc2;
+    outline: 0;
+    background: none;
+    color: #131313;
+}
+
+/* Shop Content */
+.shop-content {
+    width: 80%;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1rem;
+    justify-content: last baseline;
+    float: right;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-box p {
+    line-height: 45px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #253237;
+    color: #fff;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: #494949;
+}
+
+.tab-content {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+/* Form Container contact */
+.container {
+    width: 500px;
+    height: auto;
+    margin: 6rem auto;
+}
+
+#fname,
+#lname,
+#country,
+#subject {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    outline: 0;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.submit {
+    background-color: #F12424;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Here Start Footer */
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-color: #131313;
+    color: #fff;
+}
+
+.content-footer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 450px 250px 250px 250px;
+    justify-content: space-evenly;
+    align-self: center;
+    place-items: top;
+    margin-inline: auto;
+}
+
+.footer-box {
+    line-height: 30px;
+}
+
+.title-logo {
+    margin-bottom: 20px;
+}
+
+.text-bg-dark {
+    margin-bottom: 10px;
+    color: #ebedee;
+}
+
+/* This is for icons on Footer  */
+.fab {
+    position: relative;
+    font-size: 25px;
+    top: 15px;
+    margin: 0 5px;
+    color: #ebedee;
+}
+
+/* Breakpoints / Making Responsive */
+@media (max-width: 1080px) {
+    .nav {
+        padding: 15px;
+    }
+
+    section {
+        padding: 3rem 0 2rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .shop {
+        margin-top: 2rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        padding: 11px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .cart {
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px) {
+    .shop {
+        margin-top: 1rem !important;
+    }
+
+    .cart {
+        width: 280px;
+    }
+}

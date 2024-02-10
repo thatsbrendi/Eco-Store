@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/01-content/image/tab-icon.png">
+    <link rel="stylesheet" href="/04-content/15-style.css">
+    <title>Eco Store</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-item">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="/01-content/index.html" class="n-top">Eco <span>Store</span></a>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search..">
+                <button class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-search">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <i class='far fa-heart' id="cart-heart"></i>
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="/01-content/index.html" class="active">Home</a></li>
+                <div class="menu-down">
+                    <li><a href="/02-content/01.html" class="drop-btn">Megashop<i class="fa fa-caret-down"></i>
+                        </a></li>
+                    <div class="down-content">
+                        <div class="col-1">
+                            <div class="col-2">
+                                <h2>Computer & Tablet</h2>
+                                <div class="col-3">
+                                    <a href="/03-content/02.html">Computer & Accessories</a>
+                                    <p>Monitors</p>
+                                    <p>Webcams</p>
+                                    <p>USB Hubs</p>
+                                    <p>PC & Video Games</p>
+                                    <p>Headphones, Earphones & Accessories</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Books</h2>
+                                <div class="col-3">
+                                    <p>Books in other Languages</p>
+                                    <p>English Books</p>
+                                    <p>French Books</p>
+                                    <p>Spanish Books</p>
+                                    <p>Italy Books</p>
+                                    <p>German Books</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Home & Garden</h2>
+                                <div class="col-3">
+                                    <p>Homeware & Furniture</p>
+                                    <p>Cooking & Dining</p>
+                                    <p>Coffee</p>
+                                    <p>Deep Fryers</p>
+                                    <p>Bowl Sets</p>
+                                    <p>Butter Dishes</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Fashion Style</h2>
+                                <div class="col-3">
+                                    <p>Men</p>
+                                    <p>Women</p>
+                                    <p>Sport Specific Clothing</p>
+                                    <p>Work Wear & Uniforms</p>
+                                    <p>Novelty & Special Use Clothing</p>
+                                    <p>Shoe, Jewellery & Watch Accessories</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Grocery</h2>
+                                <div class="col-3">
+                                    <p>Baby Food</p>
+                                    <p>Bakery</p>
+                                    <p>Baking Supplies</p>
+                                    <p>Beer, Wine & Spirits</p>
+                                    <p>Coffee, Tea & Beverages</p>
+                                    <p>Dairy & Chilled Food</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Business, Industry & Science</h2>
+                                <div class="col-3">
+                                    <p>3D Printing & Scanning</p>
+                                    <p>Abrasive & Finishing Products</p>
+                                    <p>Agricultural Equipment & Supplies</p>
+                                    <p>Cutting Tools</p>
+                                    <p>Education Supplies</p>
+                                    <p>Filtration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="/02-content/02.html">Contact Us</a></li>
+            </ul>
+            <div class="drop-cont">
+                <div class="dropdown">
+                    <button class="dropbtn">EUR
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">English
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <p>English</a>
+                        <p>German</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-product">
+        <div class="content-row">
+            <div class="row-2">
+                <img src="image/12.png" alt="" width="100%" id="product-img" />
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image/13.png" alt="" width="100%" class="small-img" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/14.png" alt="" width="100%" class="small-img" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/15.png" alt="" width="100%" class="small-img" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/16.png" alt="" width="100%" class="small-img" />
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <h1 class="card-title">Logitech Mouse</h1>
+                <p class="regular-price">129.99 €</p>
+                <p class="p-details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed in
+                    mollitia amet expedita rem corrupti eveniet, cumque dolorem beatae porro ad, deleniti nesciunt quasi
+                    tempore ullam harum modi reprehenderit.</p>
+                <br />
+                <i class='bx bx-shopping-bag add-cart'></i>
+                <div class="box">
+                    <h2>Share</h2>
+                    <div class="share-icons">
+                        <i class='fab fa-facebook-f'></i>&nbsp
+                        <i class='fab fa-instagram'></i>&nbsp
+                        <i class='fab fa-twitter'></i>&nbsp
+                        <i class='fab fa-whatsapp'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description-section">
+        <h2>Description</h2>
+        <div class="product-description">
+            <div class="description-text">
+                <p class="text-1">Stock up on the perfect afternoon snack, lunchtime side or baking choice with a
+                    Three-Pound Bag of
+                    Honeycrisp Apples from Good & Gather™. Boasting the perfect blend of sweet and crisp flavors, these
+                    delicious Honeycrisp apples promise to hit the spot when you’re craving something fresh and tasty,
+                    and the crisp, juicy texture is sure to satisfy.</p>
+                <p class="text-1">Every product that carries the Good & Gather™ name starts with quality ingredients
+                    that deliver great taste, making it easier for you and your family to eat well, every day. We
+                    promise you’ll love each bite, or your money back.</p>
+                <span class="specifics">Specifics</span>
+                <div class="item-1">
+                    <div class="item-group">
+                        <ul class="list-item">
+                            <li><span class="text-bold">Origin: </span>Germany</li>
+                            <li><span class="text-bold">Packing: </span> 400g pack</li>
+                            <li><span class="text-bold">Storage way: </span> room temperature</li>
+                            <li><span class="text-bold">Expiry date: </span> 1 week</li>
+                            <li><span class="text-bold">Summary: </span> PP+ iron material, thick legs, strong bearing
+                                capacity, stable and firm,
+                                foldable,
+                                free to open and close, no space to carry, non-slip mat on the bottom, not easy to slip,
+                                easy to carry at home and outdoor, easy to carry</li>
+                        </ul>
+                    </div>
+                    <div class="item-group">
+                        <ul class="list-item">
+                            <li><span class="text-bold">General Use: </span> Outdoor Furniture</li>
+                            <li><span class="text-bold">Specific Use: </span> Beach Chair</li>
+                            <li><span class="text-bold">Appearance: </span> Modern</li>
+                            <li><span class="text-bold">Size: </span> 23.5*32*5cm</li>
+                            <li><span class="text-bold">Style: </span> FOLDING CHAIR</li>
+                            <li><span class="text-bold">Instructions for use: </span> Eat directly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="shop-content tab-content">
+        <!-- Box 1 -->
+        <div class="product-box">
+            <img src="image/02.jpg" alt="" class="product-img">
+            <h2 class="product-title">Apple Watch Nike</h2>
+            <span class="price">29 €</span>
+            <i class='bx bx-shopping-bag add-card'></i>
+        </div>
+        <!-- Box 2 -->
+        <div class="product-box">
+            <img src="image/03.jpg" alt="" class="product-img">
+            <h2 class="product-title">Balance Folio Case iPad Air</h2>
+            <span class="price">66.66 €</span>
+            <i class='bx bx-shopping-bag add-card'></i>
+        </div>
+        <!-- Box 3 -->
+        <div class="product-box">
+            <img src="image/04.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pineapple Decorative</h2>
+            <span class="price">79 €</span>
+            <i class='bx bx-shopping-bag add-card'></i>
+        </div>
+        <!-- Box 4 -->
+        <div class="product-box">
+            <img src="image/05.png" alt="" class="product-img">
+            <h2 class="product-title">L'Homme Lacoste</h2>
+            <span class="price">46.99 €</span>
+            <i class='bx bx-shopping-bag add-card'></i>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content-footer">
+            <div class="footer-box">
+                <h2>Eco <span>Store</span></h2>
+                <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.
+                </p>
+                <p>Call us: 041 096 257 14</p>
+                <i class='fab fa-facebook-f'></i>&nbsp
+                <i class='fab fa-instagram'></i>&nbsp
+                <i class='fab fa-twitter'></i>&nbsp
+                <i class='fab fa-whatsapp'></i>
+            </div>
+            <div class="footer-box">
+                <h3 class="text-bg-dark">Information</h3>
+                <p>Delivery</p>
+                <p>About us</p>
+                <p>Secure payment</p>
+                <p>Contact us</p>
+                <p>Sitemap</p>
+                <p>Stores</p>
+            </div>
+            <div class="footer-box">
+                <h3 class="text-bg-dark">Custom Links</h3>
+                <p>Legal Notice</p>
+                <p>Prices drop</p>
+                <p>New products</p>
+                <p>Best sales</p>
+                <p>My account</p>
+                <p>Terms and conditions</p>
+            </div>
+            <div class="footer-box">
+                <h3 class="text-bg-dark">My Account</h3>
+                <p>My Orders</p>
+                <p>My Credit Slips</p>
+                <p>My Addresses</p>
+                <p>My Personal Info</p>
+                <p>Return Policy</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+    <script src="/04-content/14-script.js"></script>
+</body>
+
+</html>
