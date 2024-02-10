@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="image/tab-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Eco Store</title>
+</head>
+
+<body>
+    <nav class="nav-item">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <a href="index.html" class="n-top">Eco <span>Store</span></a>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search..">
+            <button class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-search">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <i class='far fa-heart' id="cart-heart"></i>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        </div>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </nav>
+    <header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/01-content/index.html" class="active">Home</a></li>
+                <div class="menu-down">
+                    <li><a href="/02-content/01.html" class="drop-btn">Megashop<i class="fa fa-caret-down"></i>
+                        </a></li>
+                    <div class="down-content">
+                        <div class="col-1">
+                            <div class="col-2">
+                                <h2>Computer & Tablet</h2>
+                                <div class="col-3">
+                                    <a href="/03-content/02.html">Computer & Accessories</a>
+                                    <p>Monitors</p>
+                                    <p>Webcams</p>
+                                    <p>USB Hubs</p>
+                                    <p>PC & Video Games</p>
+                                    <p>Headphones, Earphones & Accessories</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Books</h2>
+                                <div class="col-3">
+                                    <p>Books in other Languages</p>
+                                    <p>English Books</p>
+                                    <p>French Books</p>
+                                    <p>Spanish Books</p>
+                                    <p>Italy Books</p>
+                                    <p>German Books</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Home & Garden</h2>
+                                <div class="col-3">
+                                    <p>Homeware & Furniture</p>
+                                    <p>Cooking & Dining</p>
+                                    <p>Coffee</p>
+                                    <p>Deep Fryers</p>
+                                    <p>Bowl Sets</p>
+                                    <p>Butter Dishes</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Fashion Style</h2>
+                                <div class="col-3">
+                                    <p>Men</p>
+                                    <p>Women</p>
+                                    <p>Sport Specific Clothing</p>
+                                    <p>Work Wear & Uniforms</p>
+                                    <p>Novelty & Special Use Clothing</p>
+                                    <p>Shoe, Jewellery & Watch Accessories</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Grocery</h2>
+                                <div class="col-3">
+                                    <p>Baby Food</p>
+                                    <p>Bakery</p>
+                                    <p>Baking Supplies</p>
+                                    <p>Beer, Wine & Spirits</p>
+                                    <p>Coffee, Tea & Beverages</p>
+                                    <p>Dairy & Chilled Food</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <h2>Business, Industry & Science</h2>
+                                <div class="col-3">
+                                    <p>3D Printing & Scanning</p>
+                                    <p>Abrasive & Finishing Products</p>
+                                    <p>Agricultural Equipment & Supplies</p>
+                                    <p>Cutting Tools</p>
+                                    <p>Education Supplies</p>
+                                    <p>Filtration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="/02-content/02.html">Contact Us</a></li>
+            </ul>
+            <!-- This is DropDown Content -->
+            <div class="drop-cont">
+                <div class="dropdown">
+                    <button class="dropbtn">USD
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">English
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <p>English</a>
+                        <p>German</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </header>
+    <!-- Background 1 -->
+    <section class="bg-1">
+        <div class="content-bg">
+            <div class="text-bg">
+                <h3 class="third-heading">50% OFF Summer Super Sale</h3>
+                <h1 class="first-heading">Unleash Your Street Style with Our New Collection</h1>
+                <button class="shop-btn">Shop Now <i class='fas fa-long-arrow-alt-right'></i></button>
+            </div>
+        </div>
+        <!-- Background 2 -->
+        <div class="bg-2">
+            <!-- Background box 1 -->
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-truck">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+                <div class="on-right">
+                    <h3>Free Shipping</h3>
+                    <p>On all orders over 75.00 €</p>
+                </div>
+            </div>
+            <!-- Background box 2 -->
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-repeat">
+                    <polyline points="17 1 21 5 17 9" />
+                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                    <polyline points="7 23 3 19 7 15" />
+                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+                <div class="on-right">
+                    <h3>Free Returns</h3>
+                    <p>Returns are free within 10 days</p>
+                </div>
+            </div>
+            <!-- Background box 3 -->
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-shield">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <div class="on-right">
+                    <h3>100% Payment Secure</h3>
+                    <p>Your payment are safe with us.</p>
+                </div>
+            </div>
+            <!-- Background box 4 -->
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"="feather feather-headphones">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                    <path
+                        d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg>
+                <div class="on-right">
+                    <h3>Support 24/7</h3>
+                    <p>Contact us 24 hours a day</p>
+                </div>
+            </div>
+        </div>
+        <!-- Shop Container -->
+        <section class="shop container">
+            <h2 class="section-title">Hot Deals</h2>
+            <!-- Shop Content -->
+            <div class="shop-content border-solid-color">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <a href="/04-content/01.html">
+                        <img src="image/02.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">DeWalt Screwdriver</h2>
+                    <span class="price">293.42 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <a href="/04-content/02.html">
+                        <img src="image/03.png" alt="" class="product-img"></a>
+                    <h2 class="product-title">Logitech Mouse</h2>
+                    <span class="price">129,99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 3 -->
+                <div class="product-box">
+                    <a href="/04-content/03.html">
+                        <img src="image/04.jpg" alt="" class="product-img"></a>
+                    <h2 class="product-title">Work Shoes</h2>
+                    <span class="price">46.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 4 -->
+                <div class="product-box">
+                    <a href="/04-content/04.html">
+                        <img src="image/05.png" alt="" class="product-img"></a>
+                    <h2 class="product-title">L'Homme Lacoste</h2>
+                    <span class="price">46.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <a href="/04-content/05.html">
+                        <img src="image/06.png" alt="" class="product-img"></a>
+                    <h2 class="product-title">Apple Homepod Mini</h2>
+                    <span class="price">41 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </section>
+        <!-- Shop Container -->
+        <section class="shop container">
+            <h2 class="section-title">Computer & Tablet</h2>
+            <!-- Shop Content -->
+            <div class="shop-content border-solid">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <p>Computer & Accessories</p>
+                    <hr>
+                    <p>Monitors</p>
+                    <hr>
+                    <p>Webcams</p>
+                    <hr>
+                    <p>USB Hubs</p>
+                    <hr>
+                    <p>PC & Video Games</p>
+                    <hr>
+                    <p>Headphones, Earphones...</p>
+                    <hr>
+                    <p>View All</p>
+                </div>
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <img src="image/07.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Apple Watch</h2>
+                    <span class="price">79.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 3 -->
+                <div class="product-box">
+                    <img src="image/08.png" alt="" class="product-img">
+                    <h2 class="product-title">Balance Folio Case iPad Air</h2>
+                    <span class="price">66.66 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 4 -->
+                <div class="product-box">
+                    <img src="image/09.png" alt="" class="product-img">
+                    <h2 class="product-title">Beats Flex Wireless Earphones</h2>
+                    <span class="price">17.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <img src="image/10.png" alt="" class="product-img">
+                    <h2 class="product-title">Chair SENSE7</h2>
+                    <span class="price">150 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </section>
+        <!-- Background 3 -->
+        <div class="bg-3">
+            <img src="image/11.jpg" class="horizontal-img" alt="">
+            <img src="image/12.jpg" class="horizontal-img" alt="">
+            <img src="image/13.jpg" class="horizontal-img" alt="">
+        </div>
+        <!-- Shop Container -->
+        <section class="shop container">
+            <h2 class="section-title">Books</h2>
+            <!-- Shop Content -->
+            <div class="shop-content border-solid">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <p>Books in other Languages</p>
+                    <hr>
+                    <p>English Books</p>
+                    <hr>
+                    <p>French Books</p>
+                    <hr>
+                    <p>Spanish Books</p>
+                    <hr>
+                    <p>Italy Books</p>
+                    <hr>
+                    <p>German Books</p>
+                    <hr>
+                    <p>View All</p>
+                </div>
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <img src="image/14.png" alt="" class="product-img">
+                    <h2 class="product-title">The Midnight Library</h2>
+                    <span class="price">9.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 3 -->
+                <div class="product-box">
+                    <img src="image/15.png" alt="" class="product-img">
+                    <h2 class="product-title">Die Familie Gegenüber</h2>
+                    <span class="price">10.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 4 -->
+                <div class="product-box">
+                    <img src="image/16.png" alt="" class="product-img">
+                    <h2 class="product-title">Demain Est Un Autre Jour</h2>
+                    <span class="price">8.20 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <img src="image/17.png" alt="" class="product-img">
+                    <h2 class="product-title">Short Stories in Spanish</h2>
+                    <span class="price">9.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </section>
+        <!-- Background 4 -->
+        <div class="bg-4">
+            <img src="image/18.jpg" class="fa-image" alt="">
+            <img src="image/19.jpg" class="fa-image" alt="">
+        </div>
+        <!-- Shop Container -->
+        <section class="shop container">
+            <h2 class="section-title">New Arrivals</h2>
+            <!-- Shop Content -->
+            <div class="shop-content border-solid">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <img src="image/20.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Haring Seater chair</h2>
+                    <span class="price">58.57 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <img src="image/21.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Wolverine Wired Gaming</h2>
+                    <span class="price">45.54 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 3 -->
+                <div class="product-box">
+                    <img src="image/22.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Camera Dome Hikvision</h2>
+                    <span class="price">39.99 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 4 -->
+                <div class="product-box">
+                    <img src="image/23.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Bulova Carmen Wall Clock</h2>
+                    <span class="price">66.49 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <img src="image/24.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Fruit dried mango slices</h2>
+                    <span class="price">104.47 €</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </section>
+        <!-- Background five -->
+        <div class="bg-5">
+            <!-- Title for this section -->
+            <h2 class="section-title">Popular Categoris</h2>
+            <!-- Grid images bg-5  -->
+            <div class="grid-img-5">
+                <!-- Box image on Background 5 -->
+                <div class="box-img-5">
+                    <div class="products">
+                        <p>Computer & Tablet</p>
+                        <p>19 Products</p>
+                        <p>View All</p>
+                    </div>
+                    <img src="image/03-rbg.png" class="img-categoris" alt="">
+                </div>
+                <!-- Box image on Background 5 -->
+                <div class="box-img-5">
+                    <div class="products">
+                        <p>Books</p>
+                        <p>17 Products</p>
+                        <p>View All</p>
+                    </div>
+                    <img src="image/14-rbg.png" class="img-categoris" alt="">
+                </div>
+                <!-- Box image on Background 5 -->
+                <div class="box-img-5">
+                    <div class="products">
+                        <p>Headphones, Earphones</p>
+                        <p>12 Products</p>
+                        <p>View All</p>
+                    </div>
+                    <img src="image/09-rbg.png" class="img-categoris" alt="">
+                </div>
+                <!-- Box image on Background 5 -->
+                <div class="box-img-5">
+                    <div class="products">
+                        <p>PC & Video Games</p>
+                        <p>8 Products</p>
+                        <p>View All</p>
+                    </div>
+                    <img src="image/21-rbg.png" class="img-categoris" alt="">
+                </div>
+                <!-- Box image on Background 5 -->
+                <div class="box-img-5">
+                    <div class="products">
+                        <p>Sofas and Armchairs</p>
+                        <p>10 Products</p>
+                        <p>View All</p>
+                    </div>
+                    <img src="image/10-rbg.png" class="img-categoris" alt="">
+                </div>
+                <!-- Box image on Background 5 -->
+                <div class="box-img-5">
+                    <div class="products">
+                        <p>Garden Power Tools</p>
+                        <p>22 Products</p>
+                        <p>View All</p>
+                    </div>
+                    <img src="image/04-rbg.png" class="img-categoris" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Content Footer -->
+            <div class="content-footer">
+                <!-- Footer box -->
+                <div class="footer-box">
+                    <!-- title Logo -->
+                    <h2 class="title-logo">Eco <span>Store</span></h2>
+                    <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.
+                    </p>
+                    <p>Call us: 041 096 257 14</p>
+                    <!-- They are social icons -->
+                    <i class='fab fa-facebook-f'></i>
+                    <i class='fab fa-instagram'></i>
+                    <i class='fab fa-twitter'></i>
+                    <i class='fab fa-whatsapp'></i>
+                </div>
+                <!-- Footer box -->
+                <div class="footer-box">
+                    <h3 class="text-bg-dark">Information</h3>
+                    <p>Delivery</p>
+                    <p>About us</p>
+                    <p>Secure payment</p>
+                    <p>Contact us</p>
+                    <p>Sitemap</p>
+                    <p>Stores</p>
+                </div>
+                <!-- Footer box -->
+                <div class="footer-box">
+                    <h3 class="text-bg-dark">Custom Links</h3>
+                    <p>Legal Notice</p>
+                    <p>Prices drop</p>
+                    <p>New products</p>
+                    <p>Best sales</p>
+                    <p>My account</p>
+                    <p>Terms and conditions</p>
+                </div>
+                <!-- Footer box -->
+                <div class="footer-box">
+                    <h3 class="text-bg-dark">My Account</h3>
+                    <p>My Orders</p>
+                    <p>My Credit Slips</p>
+                    <p>My Addresses</p>
+                    <p>My Personal Info</p>
+                    <p>Return Policy</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- JS file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
